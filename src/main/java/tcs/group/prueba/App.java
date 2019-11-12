@@ -27,7 +27,9 @@ public class App {
 				System.out.println("Jefferson");
 				break;
 			case 2:
-				System.out.println("Carlos");
+				Romanos objromano = new Romanos ();
+				objromano.Solicitar();
+				objromano.Imprimir();
 				break;
 			case 3:
 				System.out.println("Neal");
