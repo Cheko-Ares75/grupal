@@ -36,6 +36,14 @@ public class App {
 				break;
 			case 3:
 				System.out.println("Neal");
+				
+				NealSuma inst  = new NealSuma();
+				Scanner captura = new Scanner(System.in);
+				System.out.println("Digite valor 1:");
+				float valor1 = captura.nextFloat();
+				System.out.println("Digite valor 2:");
+				float valor2 = captura.nextFloat();
+				inst.suma(valor1, valor2);
 				break;
 			case 4:
 				objFibonacci.calcular();
