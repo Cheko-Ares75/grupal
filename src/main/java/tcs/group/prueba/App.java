@@ -10,13 +10,16 @@ public class App {
 	public static void main(String[] args) {
 		int opcion;
 		Scanner objEntrada = new Scanner(System.in);
+		Fibonnaci objFibonacci=new Fibonnaci();
 		do {
+			System.out.println();
+			System.out.println();
 			System.out.println("Ingrese opción: ");
 			System.out.println("MENÚ:");
 			System.out.println("Opción 1:");
 			System.out.println("Opción 2:");
 			System.out.println("Opción 3:");
-			System.out.println("Opción 4:");
+			System.out.println("Opción 4: Serie de fibonaci hasta el Enésimo elemento: ");
 			System.out.println("Opción 5:");
 			System.out.println("Opción 6:");
 			System.out.println("Opción 7:");
@@ -35,7 +38,7 @@ public class App {
 				System.out.println("Neal");
 				break;
 			case 4:
-				System.out.println("Diego");
+				objFibonacci.calcular();
 				break;
 			case 5:
 				System.out.println("Kristian con K");
@@ -53,7 +56,6 @@ public class App {
 				System.out.println("Número inválido");
 				break;
 			}
-
 		} while (opcion != 8);
 	}
 }
