@@ -11,6 +11,7 @@ public class App {
 		int opcion;
 		Scanner objEntrada = new Scanner(System.in);
 		NealSuma inst  = new NealSuma();
+		Binario objBinario = new Binario();
 		Resta objResta=new Resta();
 		Fibonnaci objFibonacci=new Fibonnaci();
 		Romanos objromano = new Romanos ();
@@ -49,6 +50,9 @@ public class App {
 				break;
 			case 5:
 				System.out.println("Kristian con K");
+				Scanner capt = new Scanner(System.in);
+				System.out.println("Digite un numero:");
+				System.out.println(objBinario.binario(capt.nextDouble()));
 				break;
 			case 6:
 				System.out.println("Jorge");
