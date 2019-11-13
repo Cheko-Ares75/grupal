@@ -11,17 +11,16 @@ public class Fibonnaci {
 	long anterior=1;
 
 	public void calcular() {
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println("PROGRAMA DE DIEGO");
+		System.out.println("PROGRAMA QUE CALCULA LA SERIE DE FIBONACCI - DIEGO RODRÍGUEZ");
 		do {
 			verificador=true;
 			System.out.println("Ingrese límite para la serie de fibonacci (Número positivo menor a 50):");
 			limite=objEntrada.nextInt();
-			if(limite<0 || limite >=50)
+			if(limite<0 || limite >=50){
 				verificador=false;
+				System.out.println("El número debe ser positivo y no debe ser mayor a 50");
+			}
+				
 		} while (!verificador);
 		contador=0;
 		do {

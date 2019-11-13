@@ -8,7 +8,8 @@ public class Romanos {
 	int num=0;
 	public void Solicitar() {
 		in = new Scanner(System.in);
-		System.out.println("Ingresar el numero el cual desea convertir a romano: ");
+		System.out.println("PROGRAMA QUE CALCULA NÚMEROS ROMANOS - CARLOS SARMIENTO");
+		System.out.println("Ingrese el número a convertir (máximo el 50): ");
 		num = in.nextInt();
 	}
 	public void Imprimir() {
