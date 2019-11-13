@@ -11,15 +11,16 @@ public class App {
 		int opcion;
 		Scanner objEntrada = new Scanner(System.in);
 		Fibonnaci objFibonacci=new Fibonnaci();
+		Romanos objromano = new Romanos ();
 		do {
 			System.out.println();
 			System.out.println();
 			System.out.println("Ingrese opción: ");
 			System.out.println("MENÚ:");
 			System.out.println("Opción 1:");
-			System.out.println("Opción 2:");
+			System.out.println("Opción 2: Calcular números romanos hasta el 50");
 			System.out.println("Opción 3:");
-			System.out.println("Opción 4: Serie de fibonaci hasta el Enésimo elemento: ");
+			System.out.println("Opción 4: Serie de fibonaci hasta la posición 54: ");
 			System.out.println("Opción 5:");
 			System.out.println("Opción 6:");
 			System.out.println("Opción 7:");
@@ -30,7 +31,6 @@ public class App {
 				System.out.println("Jefferson");
 				break;
 			case 2:
-				Romanos objromano = new Romanos ();
 				objromano.Solicitar();
 				objromano.Imprimir();
 				break;
@@ -50,6 +50,7 @@ public class App {
 				System.out.println("Jhon");
 				break;
 			case 8:
+				System.out.println("El programa se ha cerrado de manera exitosa!");
 				System.exit(0);
 				break;
 			default:
@@ -57,5 +58,6 @@ public class App {
 				break;
 			}
 		} while (opcion != 8);
+		objEntrada.close();
 	}
 }
