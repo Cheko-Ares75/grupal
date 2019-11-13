@@ -11,6 +11,7 @@ public class App {
 		int opcion;
 		Scanner objEntrada = new Scanner(System.in);
 		NealSuma inst  = new NealSuma();
+		Resta objResta=new Resta();
 		Fibonnaci objFibonacci=new Fibonnaci();
 		Romanos objromano = new Romanos ();
 		do {
@@ -29,7 +30,7 @@ public class App {
 			opcion = objEntrada.nextInt();
 			switch (opcion) {
 			case 1:
-				System.out.println("Jefferson");
+				objResta.restar();
 				break;
 			case 2:
 				objromano.Solicitar();
