@@ -10,6 +10,7 @@ public class App {
 	public static void main(String[] args) {
 		int opcion;
 		Scanner objEntrada = new Scanner(System.in);
+		NealSuma inst  = new NealSuma();
 		Fibonnaci objFibonacci=new Fibonnaci();
 		Romanos objromano = new Romanos ();
 		do {
@@ -18,9 +19,9 @@ public class App {
 			System.out.println("Ingrese opción: ");
 			System.out.println("MENÚ:");
 			System.out.println("Opción 1:");
-			System.out.println("Opción 2: Calcular números romanos hasta el 50");
-			System.out.println("Opción 3:");
-			System.out.println("Opción 4: Serie de fibonaci hasta la posición 54: ");
+			System.out.println("Opción 2: Calcular números romanos hasta el 50.");
+			System.out.println("Opción 3: Suma de números decimales.");
+			System.out.println("Opción 4: Serie de fibonaci hasta la posición 54.");
 			System.out.println("Opción 5:");
 			System.out.println("Opción 6:");
 			System.out.println("Opción 7:");
@@ -35,9 +36,6 @@ public class App {
 				objromano.Imprimir();
 				break;
 			case 3:
-				System.out.println("Neal");
-				
-				NealSuma inst  = new NealSuma();
 				Scanner captura = new Scanner(System.in);
 				System.out.println("Digite valor 1:");
 				float valor1 = captura.nextFloat();
